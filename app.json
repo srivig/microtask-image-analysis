@@ -12,19 +12,24 @@
       "description": "bucket name"
     },
     "SUBDIRECTORY": {
-      "description": "directory in your bucket used to store uploaded files (defaults to \"files\""
+      "description": "directory in your bucket used to store uploaded files (defaults to \"files\")"
     },
-    "AWS_ACCESS_KEY_ID": {
+    "CREDENTIALS_AWS_ACCESS_KEY_ID": {
       "description": "id of your bucket"
     },
-    "AWS_SECRET_ACCESS_KEY" : {
+    "CREDENTIALS_AWS_SECRET_ACCESS_KEY" : {
       "description": "access key for your bucket"
     },
-    "REGION": {
+    "CREDENTIALS_REGION": {
       "description": "AWS region (defaults to \"us-east-1\")"
     }
   },
   "scripts": {
     "postdeploy": ["bundle exec rake db:setup", "bundle exec rake wagn:bootstrap:load"]
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/xithan/heroku-buildpack-ruby"
+    }
+  ]
 }
