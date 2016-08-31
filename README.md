@@ -7,7 +7,8 @@ Ahoy, Wagneer! You are only three -oys away from your very own Wagn deck:
 
 ### Employ
 
-You need to have a cloud storage provider at your disposal (for example AWS S3, Rackspace or Google Cloud).
+You need to have a cloud storage provider at your disposal. Find and get one if you don't have one. For example
+[AWS S3](https://aws.amazon.com/s3/), [Rackspace](https://www.rackspace.com) or [Google Cloud](https://cloud.google.com).
 
 ### Deploy
 
