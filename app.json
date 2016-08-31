@@ -27,7 +27,7 @@
     }
   },
   "scripts": {
-    "postdeploy": "bundle exec rake heroku:seed"
+    "postdeploy": "bundle exec rake db:setup"
   },
   "buildpacks": [
     {
