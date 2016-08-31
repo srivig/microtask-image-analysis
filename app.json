@@ -1,0 +1,30 @@
+{
+  "name": "Wagn deck",
+  "description": "serious web development made fun",
+  "repository": "https://github.com/wagn/heroku-deck",
+  "logo": "http://wagn.org/bruce_logo.png",
+  "keywords": ["wagn", "decko", "deck", "wiki"],
+  "website": "http://wagn.org",
+  "addons": ["heroku-postgresql:hobby-dev"],
+  "env": {
+    "RAILS_ENV": "production",
+    "DIRECTORY": {
+      "description": "bucket name"
+    },
+    "SUBDIRECTORY": {
+      "description": "directory in your bucket used to store uploaded files (defaults to \"files\""
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "id of your bucket"
+    },
+    "AWS_SECRET_ACCESS_KEY" : {
+      "description": "access key for your bucket"
+    },
+    "REGION": {
+      "description": "AWS region (defaults to \"us-east-1\")"
+    }
+  },
+  "scripts": {
+    "postdeploy": ["bundle exec rake db:setup", "bundle exec rake wagn:bootstrap:load"]
+  }
+}
