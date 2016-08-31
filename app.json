@@ -13,7 +13,7 @@
     },
     "SUBDIRECTORY": {
       "description": "directory in your bucket used to store uploaded files (defaults to \"files\")",
-      "require": false
+      "required": false
     },
     "CREDENTIALS_AWS_ACCESS_KEY_ID": {
       "description": "id of your bucket"
@@ -23,7 +23,7 @@
     },
     "CREDENTIALS_REGION": {
       "description": "AWS region (defaults to \"us-east-1\")",
-      "require": false
+      "required": false
     }
   },
   "scripts": {
