@@ -8,21 +8,39 @@
   "addons": ["heroku-postgresql:hobby-dev"],
   "env": {
     "RAILS_ENV": "production",
+    "PROVIDER": {
+      "description": "choose the fog gem for your cloud provider (eg. \"fog/aws\", \"fog/rackspace\", or \"fog/google\"",
+      "value": "fog/aws"
+    },
     "DIRECTORY": {
-      "description": "bucket name"
+      "description": "the directory also known as bucket"
     },
     "SUBDIRECTORY": {
-      "description": "directory in your bucket used to store uploaded files (defaults to \"files\")",
+      "description": "directory in your bucket used to store the uploaded files (defaults to \"files\")",
       "required": false
     },
+    "CREDENTIALS_PROVIDER": {
+      "description": "name of your cloud provider (eg. \"AWS\", \"Rackspace\", or \"Google\")",
+      "value": "AWS"
+    },
     "CREDENTIALS_AWS_ACCESS_KEY_ID": {
-      "description": "id of your bucket"
+      "description": "AWS id of your bucket",
+      "required": false
     },
     "CREDENTIALS_AWS_SECRET_ACCESS_KEY" : {
-      "description": "access key for your bucket"
+      "description": "AWS access key for your bucket",
+      "required": false
     },
     "CREDENTIALS_REGION": {
       "description": "AWS region (defaults to \"us-east-1\")",
+      "required": false
+    },
+    "CREDENTIALS_GOOGLE_ACCESS_KEY_ID": {
+      "description": "Google cloud id",
+      "required": false
+    },
+    "CREDENTIALS_GOOGLE_SECRET_ACCESS_KEY" : {
+      "description": "Google cloud key",
       "required": false
     }
   },
