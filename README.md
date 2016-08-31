@@ -1,5 +1,5 @@
 # heroku-deck
-A [Wagn](http://wagn.org) deck that can be installed on Heroku
+A [Wagn](http://wagn.org) deck that can be installed on [Heroku](http://heroku.com)
 
 ## Setup
 
