@@ -62,8 +62,9 @@ module HerokuWagn
         },
         attributes: { "Cache-Control" => "max-age=#{365.day.to_i}" },
         public: true,
-        authenticated_url_expiration: 180  # if public is set to false this
+        authenticated_url_expiration: 180,  # if public is set to false this
                                            # option is needed
+        use_ssl_for_aws: true
       }
     }
   end
