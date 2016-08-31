@@ -27,7 +27,7 @@
     }
   },
   "scripts": {
-    "postdeploy": "bundle exec rake db:setup"
+    "postdeploy": "env DECKO_SEED_REPO_PATH='db/seed' bundle exec rake db:setup"
   },
   "buildpacks": [
     {
