@@ -3,7 +3,7 @@ A Wagn deck that can be installed on Heroku
 
 ## Setup
 
-Ahoy, Wagneer! You are only three -oys away from your very own Wagn deck.
+Ahoy, Wagneer! You are only three -oys away from your very own Wagn deck:
 
 ### Employ
 
