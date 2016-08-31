@@ -12,7 +12,8 @@
       "description": "bucket name"
     },
     "SUBDIRECTORY": {
-      "description": "directory in your bucket used to store uploaded files (defaults to \"files\")"
+      "description": "directory in your bucket used to store uploaded files (defaults to \"files\")",
+      "require": false
     },
     "CREDENTIALS_AWS_ACCESS_KEY_ID": {
       "description": "id of your bucket"
@@ -21,11 +22,12 @@
       "description": "access key for your bucket"
     },
     "CREDENTIALS_REGION": {
-      "description": "AWS region (defaults to \"us-east-1\")"
+      "description": "AWS region (defaults to \"us-east-1\")",
+      "require": false
     }
   },
   "scripts": {
-    "postdeploy": ["bundle exec rake wagn:seed"]
+    "postdeploy": "bundle exec rake db:setup"
   },
   "buildpacks": [
     {
