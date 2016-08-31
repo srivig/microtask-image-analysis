@@ -13,6 +13,7 @@ You need to have a cloud storage provider at your disposal. Find and get one if 
 ### Deploy
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wagn/heroku-deck)
 
 Wagn uses [CarrierWave](https://github.com/carrierwaveuploader/carrierwave) and [Fog](https://github.com/fog/fog) 
 to handle file uploads. The config variables in Heroku are translations of CarrierWave's Fog [configuration API](https://github.com/carrierwaveuploader/carrierwave#fog)
