@@ -24,7 +24,7 @@ config.fog_credentials = {
 }
 ```
 
-Currently, Wagn supports only Google and AWS configuration via Heroku config variables. If you want to use a different cloud provider you have to fork this repository and adapt the `file_buckets` configuration in `config/application.rb`.
+The deploy form offers only credential config options for Google and AWS. If you want to use a different cloud provider then leave the credential fields empty, deploy the Heroku app, click on "manage app" and use the "config variables" section on the settings tab to provide the credentials for your cloud storage.
 
 ### Enjoy
 
