@@ -36,11 +36,11 @@
       "required": false
     },
     "CREDENTIALS_GOOGLE_ACCESS_KEY_ID": {
-      "description": "required if you use Google",
+      "description": "required if you use Google Cloud",
       "required": false
     },
     "CREDENTIALS_GOOGLE_SECRET_ACCESS_KEY" : {
-      "description": "required if you use Google",
+      "description": "required if you use Google Cloud",
       "required": false
     }
   },
