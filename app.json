@@ -9,14 +9,14 @@
   "env": {
     "RAILS_ENV": "production",
     "PROVIDER": {
-      "description": "choose the fog gem for your cloud provider (eg. \"fog/aws\", \"fog/rackspace\", or \"fog/google\"",
+      "description": "choose the fog gem for your cloud provider (eg. fog/aws, fog/rackspace, or fog/google)",
       "value": "fog/aws"
     },
     "DIRECTORY": {
-      "description": "the directory also known as bucket"
+      "description": "the cloud directory also known as bucket"
     },
     "SUBDIRECTORY": {
-      "description": "directory in your bucket used to store the uploaded files (defaults to \"files\")",
+      "description": "directory in your bucket used to store file uploads (defaults to \"files\")",
       "required": false
     },
     "CREDENTIALS_PROVIDER": {
@@ -24,23 +24,23 @@
       "value": "AWS"
     },
     "CREDENTIALS_AWS_ACCESS_KEY_ID": {
-      "description": "AWS id of your bucket",
+      "description": "required if you use AWS",
       "required": false
     },
     "CREDENTIALS_AWS_SECRET_ACCESS_KEY" : {
-      "description": "AWS access key for your bucket",
+      "description": "required if you use AWS",
       "required": false
     },
     "CREDENTIALS_REGION": {
-      "description": "AWS region (defaults to \"us-east-1\")",
+      "description": "AWS region (defaults to us-east-1)",
       "required": false
     },
     "CREDENTIALS_GOOGLE_ACCESS_KEY_ID": {
-      "description": "Google cloud id",
+      "description": "required if you use Google",
       "required": false
     },
     "CREDENTIALS_GOOGLE_SECRET_ACCESS_KEY" : {
-      "description": "Google cloud key",
+      "description": "required if you use Google",
       "required": false
     }
   },
