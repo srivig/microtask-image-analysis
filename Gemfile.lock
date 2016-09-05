@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/carrierwaveuploader/carrierwave
-  revision: 8ceadb7fca5068564cfa8a33b1a76af86c6cbff3
+  revision: a94b68cf848d6bd6ea5fbc2ce7d772456e4a5914
   branch: master
   specs:
     carrierwave (0.11.0)
@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/xithan/wagn
-  revision: b606808fd8ccbc2709c1e3f47f14c9c7a383140d
+  revision: f8b3c546fbaeaab7e4f3cbdf8bb0d5c1f2b30501
   branch: heroku
   specs:
     card (1.19.0)
@@ -164,7 +164,7 @@ GEM
       multi_json (~> 1.10)
     fog-local (0.3.0)
       fog-core (~> 1.27)
-    fog-openstack (0.1.11)
+    fog-openstack (0.1.12)
       fog-core (>= 1.40)
       fog-json (>= 1.0)
       ipaddress (>= 0.8)
@@ -293,7 +293,7 @@ GEM
     sprockets (3.7.0)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.1.1)
+    sprockets-rails (3.2.0)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
