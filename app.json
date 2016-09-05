@@ -9,9 +9,9 @@
   "env": {
     "RAILS_ENV": "production",
 	"FILE_STORAGE": {
-		"description": "if you don't have cloud storage change it to \"web\" (that means you can only use urls to refer to images and files but you won't be able to upload anything or change css and script cards)",
+		"description": "if you don't have access to a cloud storage service change it to \"web\" (that means you can only use urls to refer to images and files but you won't be able to upload anything or change css and script cards)",
 		"value": "cloud"
-	}
+	},
     "PROVIDER": {
       "description": "choose the fog gem for your cloud provider (eg. fog/aws, fog/rackspace, or fog/google)",
       "value": "fog/aws"
