@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/xithan/wagn
-  revision: f8b3c546fbaeaab7e4f3cbdf8bb0d5c1f2b30501
+  revision: 170fb53baaccd2f119ef01cdc25a3b56037d3735
   branch: heroku
   specs:
     card (1.19.0)
