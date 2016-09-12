@@ -14,10 +14,12 @@
 	},
     "PROVIDER": {
       "description": "choose the fog gem for your cloud provider (eg. fog/aws, fog/rackspace, or fog/google)",
-      "value": "fog/aws"
+      "value": "fog/aws",
+      "required": false
     },
     "DIRECTORY": {
-      "description": "the cloud directory also known as bucket"
+      "description": "the cloud directory also known as bucket",
+      "required": false
     },
     "SUBDIRECTORY": {
       "description": "directory in your bucket used to store file uploads (defaults to \"files\")",
@@ -25,7 +27,8 @@
     },
     "CREDENTIALS_PROVIDER": {
       "description": "name of your cloud provider (eg. \"AWS\", \"Rackspace\", or \"Google\")",
-      "value": "AWS"
+      "value": "AWS",
+      "required": false
     },
     "CREDENTIALS_AWS_ACCESS_KEY_ID": {
       "description": "required if you use AWS",
