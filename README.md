@@ -7,8 +7,10 @@ Ahoy, Wagneer! You are only three -oys away from your very own Wagn deck:
 
 ### Employ
 
-You need to have a cloud storage provider at your disposal. Find and get one if you don't have one. For example
+For full functionality, you need to have a cloud storage provider at your disposal. Find and get one if you don't have one. For example
 [AWS S3](https://aws.amazon.com/s3/), [Rackspace](https://www.rackspace.com) or [Google Cloud](https://cloud.google.com).
+
+There is a possibility to use a Wagn deck without cloud storage. Choose "web" as file store option. In that case you won't be able to upload images and files and you can't make any css and javascript changes. But it's possible to embed images via urls (That's why the option is called "web". You can use existing "web" ressources in your deck)
 
 ### Deploy
 
