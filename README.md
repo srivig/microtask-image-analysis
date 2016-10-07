@@ -14,8 +14,9 @@ There is a possibility to use a Wagn deck without cloud storage. Choose "web" as
 
 ### Deploy
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wagn/heroku-deck)
+Click here :point_right: [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wagn/heroku-deck) and fill in the fields.
 
+#### Additional information about your config options ####
 Wagn uses [CarrierWave](https://github.com/carrierwaveuploader/carrierwave) and [Fog](https://github.com/fog/fog) 
 to handle file uploads. The config variables in Heroku are translations of CarrierWave's Fog [configuration API](https://github.com/carrierwaveuploader/carrierwave#fog)
 
