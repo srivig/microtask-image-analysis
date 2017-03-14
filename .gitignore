@@ -1,0 +1,4 @@
+Procfile
+.env
+app.json
+/config/database.yml
