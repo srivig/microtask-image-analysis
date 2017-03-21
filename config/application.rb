@@ -56,8 +56,8 @@ module HerokuWagn
         subdirectory: "files",
         credentials: {
            provider: 'AWS',                         # required
-           aws_access_key_id: 'AKIAJNVO3OTKWZMSAAPA',
-           aws_secret_access_key: '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',
+           aws_access_key_id: 'xxxx',
+           aws_secret_access_key: 'xxxx',
            region: 'eu-west-1'                  # optional, defaults to 'us-east-1'
            #host: 's3.example.com'                  # optional, defaults to nil
            #endpoint: 'https://s3.example.com:8080' # optional, defaults to nil
