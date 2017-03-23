@@ -9,7 +9,7 @@ format :html do
       incs = incs[0].to_s.split('|', 2)[0]
       subcard = incs.split('+', 2)[1]
       nest_regex = /\{\{\+#{subcard}\|([^\}]*)\}\}/
-      css_attr = unique_id
+      css_attr = unique_id+subcard.parameterize.underscore
       field_html = field_nest(subcard, new: {})
       field_html =
         field_html.gsub 'pointer-radio-no', 'pointer-radio-no' + css_attr
