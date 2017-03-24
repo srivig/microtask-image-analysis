@@ -6,12 +6,11 @@ format :html do
     image_url += image_name
     load_image = image_tag(image_url, class: 'profile_image')
     card_structure = card.template.db_content
-    card_name = unique_id
     card_structure.scan(/\{\{([^\}]*)\}\}/).each do |incs|
       incs = incs[0].to_s.split('|', 2)[0]
       subcard = incs.split('+', 2)[1]
       nest_regex = /\{\{\+#{subcard}\|([^\}]*)\}\}/
-      css_attr = card_name + subcard.parameterize.underscore
+      css_attr = '-' + subcard.parameterize.underscore + '-' + unique_id
       field_html = field_nest(subcard, new: {})
       field_html =
         field_html.gsub 'pointer-radio-no', 'pointer-radio-no' + css_attr
